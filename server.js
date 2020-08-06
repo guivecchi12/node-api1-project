@@ -82,7 +82,7 @@ server.delete('/users/:id', (req, res) => {
 })
 
 server.put('/users/:id', (req, res) => {
-    const id = req.params.id
+    const id = req.params.id;
     const user = db.getUserById(id)
 
     if(!user){
